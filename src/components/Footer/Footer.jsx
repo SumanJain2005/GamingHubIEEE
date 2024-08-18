@@ -76,7 +76,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="footer-bottom mt-4">
-                    <p className="text-center">Lorem ipsumipsum</p>
+                    <p className="text-center">~ IEEE EB AOT ~</p>
                 </div>
             </footer>
         </>
