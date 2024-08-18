@@ -1,9 +1,22 @@
+footer{
+    background-color: #000;
+    background: #000;
+}
 .footer-section {
-    background-color: black; /* Pitch black background */
+    background-color: #000; /* Pitch black background */
     color: white;
     padding: 40px 20px;
     text-align: center;
     position: relative;
+}
+
+/* Fluorescent line */
+.fluorescent-line {
+    width: 80%; /* Adjust width so it doesn't touch the screen edges */
+    height: 3px;
+    background-color: #00ff00; /* Fluorescent green color */
+    margin: 0 auto 20px auto; /* Center the line and add space below it */
+    border-radius: 20px; /* Rounded ends */
 }
 
 .footer-divider {
