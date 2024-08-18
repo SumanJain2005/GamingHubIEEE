@@ -22,7 +22,7 @@ function App() {
       <Starting />
       <About />
       <Starting /> {/* Reuse the Starting component */}
-      <div className="footer-divider"></div> {/* Add this divider before the footer */}
+      
       <Footer />
     </div>
   );
