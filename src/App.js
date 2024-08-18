@@ -39,7 +39,7 @@ function App() {
               <Starting /> {/* Reusing the Starting component */}
             </>
           } />
-          <Route path="/signup" element={<Signup />} />  {/* Signup route */}
+           {/* Signup route */}
           <Route path="/team" element={<Team />} />      {/* Team route */}
         </Routes>
 
