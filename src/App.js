@@ -2,12 +2,15 @@ import React from 'react';
 import Navbar from './components/navbar/navbar.jsx';
 import StartingHeading from './components/StartingHeading/StartingHeading.jsx';
 import ImageSlider from './components/ImageSlider/ImageSlider.jsx';
+import Starting from './components/Starting/Starting.jsx';
+import About from './components/About/About.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   const slides = [
-      { image: './images/image1.png' },
-      { image: './images/image2.png' },
-      { image: './images/image4.png' }
+      { image: './images/Image1.png' },
+      { image: './images/Image2.png' },
+      { image: './images/Image3.png' },
       // Add more slides as needed
   ];
 
@@ -16,7 +19,11 @@ function App() {
       <Navbar />
       <StartingHeading />
       <ImageSlider slides={slides} />
-      {/* Add other components such as the slider menu here */}
+      <Starting />
+      <About />
+      <Starting /> {/* Reuse the Starting component */}
+      <div className="footer-divider"></div> {/* Add this divider before the footer */}
+      <Footer />
     </div>
   );
 }

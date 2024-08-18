@@ -1,3 +1,4 @@
+/* Existing styles */
 .App {
   text-align: center;
 }
@@ -35,4 +36,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* New custom styles */
+
+/* Custom divider before the footer */
+.footer-divider {
+    position: relative;
+    height: 10px; /* Adjust the height as needed */
+    background-color: #00ff00; /* Green color to match your design */
+    margin: 40px 0; /* Space around the divider */
+}
+
+.footer-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 200px; /* Adjust width to fit your design */
+    height: 10px; /* Adjust height to match your design */
+    background-color: #00ff00; /* Same green color */
+    clip-path: polygon(0 0, 100% 50%, 0 100%); /* Creates the triangle shape */
+}
+
+.footer-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -60px; /* Adjust based on the size of the graphic */
+    transform: translateY(-50%);
+    width: 120px; /* Width of the stylized graphic */
+    height: 20px; /* Height of the stylized graphic */
+    background-image: url('/images/your-stylized-graphic.png'); /* Replace with your graphic */
+    background-size: contain;
+    background-repeat: no-repeat;
 }
