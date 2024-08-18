@@ -1,8 +1,10 @@
 /* General App styles */
 .App {
   text-align: center;
-  background-color: transparent; /* Set the entire background to black */
+  background-color: black; /* Set the entire background to black */
   overflow: hidden; /* Ensure no unwanted scrollbars appear */
+  min-height: 100vh; /* Ensure the App takes up at least the full height of the viewport */
+  position: relative; /* Ensure elements like the canvas can be positioned relative to this container */
 }
 
 /* Logo styles */
@@ -19,7 +21,7 @@
 
 /* Header styles */
 .App-header {
-  background-color: #282c34;
+  background-color: transparent; /* Let the canvas show through */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -54,4 +56,5 @@
   z-index: -1; /* Place behind other content */
   border: none;
   display: block; /* Remove default margin/padding of canvas */
+  background-color: black; /* Ensure any gaps are also black */
 }
