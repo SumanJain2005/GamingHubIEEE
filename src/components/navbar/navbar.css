@@ -1,4 +1,10 @@
 /* src/components/Navbar/Navbar.css */
+@font-face {
+  font-family: 'ModernWarfare';
+  src: url('./MW.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .navbar {
     display: flex;
@@ -55,8 +61,9 @@
     cursor: pointer;
     border-radius: 50px; /* Capsule shape */
     font-size: 16px;
+    font-family: 'ModernWarfare', sans-serif; /* Apply the custom font */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
-  }
+}
   
   /* Hover effect for Sign Up button */
   .signup-btn:hover {
