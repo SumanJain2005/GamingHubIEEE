@@ -7,7 +7,7 @@ import Starting from './components/Starting/Starting.jsx';
 import About from './components/About/About.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Squares from './components/Squares/Squares.jsx';  
-import Signup from 'GamingHub2\GamingHubIEEE\src\components\Signup\Signup.jsx';  // Import Signup component
+ // Import Signup component
 import Team from './components/Team/Team.jsx';        // Import Team component
 
 function App() {
